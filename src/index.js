@@ -1,9 +1,9 @@
 import '~/config/ReactotronConfig';
 import '~/config/DevToolsConfig';
 
-import React, {Component} from 'react';
-import {StyleSheet, View} from 'react-native';
-import Todo from "~/components/Todo";
+import React, { Component } from 'react';
+import { StyleSheet, View } from 'react-native';
+import Todo from '~/components/Todo';
 
 export default class App extends Component {
   state = {
@@ -11,7 +11,7 @@ export default class App extends Component {
     todos: [
       {
         id: 0,
-        text: 'Fazer café',
+        text: 'Fazer café'
       },
       {
         id: 1,
@@ -22,7 +22,7 @@ export default class App extends Component {
 
   addTodo = () => {
     this.setState({
-      todos: [...this.state.todos, {id: Math.random(), text: 'Novo todo'}],
+      todos: [...this.state.todos, { id: Math.random(), text: 'Novo todo' }]
     });
   };
 
@@ -57,10 +57,10 @@ const styles = StyleSheet.create({
     ]
   },
   boxText: {
-    color: '#fff',
+    color: '#fff'
   },
   text: {
     fontWeight: 'bold',
-    fontSize: 24,
+    fontSize: 24
   }
 });
